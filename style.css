@@ -80,4 +80,7 @@ textarea{min-height:150px;resize:vertical}
   height: auto;
   display: block;
   margin: 20px auto;
+.header {
+  text-align: center;
+  padding: 20px;
 }
