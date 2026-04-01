@@ -75,3 +75,9 @@ textarea{min-height:150px;resize:vertical}
 .footer-wrap p{margin:.35rem 0 0;color:var(--muted)}.footer-links{display:flex;gap:18px;flex-wrap:wrap;color:var(--muted)}
 @media (max-width:1080px){.menu{display:none}.hero-grid,.about-grid,.contact-grid{grid-template-columns:1fr}.trust-grid,.cards-grid,.reviews-grid{grid-template-columns:1fr 1fr}}
 @media (max-width:720px){.topbar-wrap,.footer-wrap{flex-direction:column;align-items:flex-start}.nav{align-items:flex-start;flex-direction:column}.nav-actions{width:100%}.nav-actions .btn,.btn{width:100%}.hero{padding-top:54px}.hero-actions{flex-direction:column}.trust-grid,.cards-grid,.reviews-grid,.benefits{grid-template-columns:1fr}.floating-wa{left:16px;right:16px;bottom:16px;text-align:center}.brand img{width:min(210px,100%)}}
+.logo {
+  width: 220px;
+  height: auto;
+  display: block;
+  margin: 20px auto;
+}
