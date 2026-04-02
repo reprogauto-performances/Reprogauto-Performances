@@ -238,4 +238,13 @@ a.btn {
   section {
     padding: 54px 0 !important;
   }
+}.hero-logo,
+.hero-logo * {
+  justify-content: center !important;
+  text-align: center !important;
+}
+
+.hero-logo img {
+  margin-left: auto !important;
+  margin-right: auto !important;
 }
