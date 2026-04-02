@@ -751,3 +751,13 @@ p {
     font-size: 0.96rem !important;
   }
 }
+
+@media (max-width: 768px) {
+  .nav-actions {
+    width: 100% !important;
+  }
+
+  .nav-actions .btn {
+    width: 100% !important;
+  }
+}
