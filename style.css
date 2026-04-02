@@ -317,4 +317,17 @@ a.btn {
   .menu {
     display: none !important;
   }
+}.nav-actions {
+  margin-top: 10px;
+}
+
+.hero {
+  padding-top: 60px !important;
+}
+
+.hero h1 {
+  margin-top: 20px;
+}.floating-wa,
+.whatsapp-fixed {
+  bottom: 20px !important;
 }
