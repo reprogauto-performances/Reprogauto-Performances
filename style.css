@@ -659,4 +659,40 @@ p {
   .section {
     padding: 54px 0;
   }
+}/* ===== AJUSTEMENT HEADER + LOGO ===== */
+
+.site-header {
+  padding: 0 !important;
+}
+
+.nav {
+  min-height: 74px !important;
+  padding: 8px 0 !important;
+}
+
+.logo {
+  width: 118px !important;
+  max-width: 36vw !important;
+  height: auto !important;
+  margin: 0 auto !important;
+}
+
+.hero {
+  padding-top: 42px !important;
+}
+
+@media (max-width: 768px) {
+  .nav {
+    min-height: 68px !important;
+    gap: 10px !important;
+  }
+
+  .logo {
+    width: 112px !important;
+    max-width: 34vw !important;
+  }
+
+  .hero {
+    padding-top: 34px !important;
+  }
 }
