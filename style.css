@@ -78,10 +78,12 @@ textarea{min-height:150px;resize:vertical}
 /* ===== PREMIUM OVERRIDE REPROG'AUTO ===== */
 
 .hero-logo {
+  width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 24px 0 10px;
+  text-align: center;
+  padding: 24px 0 18px;
 }
 
 .logo {
@@ -89,8 +91,9 @@ textarea{min-height:150px;resize:vertical}
   max-width: 38vw;
   height: auto !important;
   display: block;
-  margin: 18px auto 10px !important;
+  margin: 0 auto !important;
   filter: drop-shadow(0 0 12px rgba(255, 0, 0, 0.22));
+
 }
 
 .hero {
