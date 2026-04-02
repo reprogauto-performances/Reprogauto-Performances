@@ -18,6 +18,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+
   <script type="application/ld+json">
   {
     "@context":"https://schema.org",
@@ -57,7 +58,6 @@
         <a href="#services">Prestations</a>
         <a href="#why">Pourquoi nous</a>
         <a href="#reviews">Avis</a>
-        <a href="#zones">Zones</a>
         <a href="#faq">FAQ</a>
         <a href="#contact">Contact</a>
       </nav>
@@ -73,23 +73,70 @@
     <section class="hero">
       <div class="hero-bg"></div>
 
-      <div class="hero-content">
-        <p class="eyebrow">REPROGRAMMATION MOTEUR • CONVERSION • ACCOMPAGNEMENT</p>
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">REPROGRAMMATION MOTEUR • CONVERSION • ACCOMPAGNEMENT</p>
 
-        <h1>
-          Performance, réactivité et <span>accompagnement sur mesure</span>.
-        </h1>
+          <h1>
+            Performance, réactivité et <span>accompagnement sur mesure</span>.
+          </h1>
 
-        <p class="lead">
-          Reprog’Auto PERFORMANCES vous accompagne à Portet-sur-Garonne, Muret et Toulouse Sud
-          pour vos projets d’optimisation moteur et de conversion, avec une approche sérieuse,
-          claire et professionnelle.
-        </p>
+          <p class="lead">
+            Reprog’Auto PERFORMANCES vous accompagne à Portet-sur-Garonne, Muret et Toulouse Sud
+            pour vos projets d’optimisation moteur et de conversion, avec une approche sérieuse, claire et professionnelle.
+          </p>
 
-        <div class="hero-cta">
-          <a class="btn btn-primary large" href="#contact">Demander un devis</a>
-          <a class="btn btn-dark large" href="tel:0651612439">Appeler maintenant</a>
+          <div class="hero-cta">
+            <a class="btn btn-primary large" href="#contact">Demander un devis</a>
+            <a class="btn btn-dark large" href="tel:0651612439">Appeler maintenant</a>
+          </div>
+
+          <div class="hero-points">
+            <span>Réponse rapide</span>
+            <span>Approche personnalisée</span>
+            <span>Contact direct</span>
+          </div>
         </div>
+
+        <aside class="hero-card">
+          <div class="glass-card">
+            <p class="card-kicker">ESTIMATION RAPIDE</p>
+            <h2>Parlons de votre véhicule</h2>
+            <p class="card-text">
+              Décrivez votre véhicule et votre besoin pour obtenir un premier retour rapidement.
+            </p>
+
+            <form class="quick-form" onsubmit="sendEstimate(event)">
+              <label>
+                Véhicule
+                <input type="text" id="q-vehicle" placeholder="Ex : Golf 7 GTD" required>
+              </label>
+
+              <label>
+                Motorisation
+                <input type="text" id="q-engine" placeholder="Ex : 2.0 TDI 184" required>
+              </label>
+
+              <label>
+                Projet
+                <select id="q-project">
+                  <option>Stage 1</option>
+                  <option>Conversion E85</option>
+                  <option>Diagnostic / conseil</option>
+                  <option>Gestion moteur spécifique</option>
+                </select>
+              </label>
+
+              <button class="btn btn-primary full" type="submit">Recevoir un retour</button>
+            </form>
+
+            <div class="mini-contact">
+              <a href="tel:0651612439">06 51 61 24 39</a>
+              <a href="mailto:reprogautoperformances@gmail.com">reprogautoperformances@gmail.com</a>
+              <a href="https://wa.me/33651612439?text=Bonjour,%20je%20souhaite%20un%20devis%20pour%20mon%20véhicule" target="_blank" rel="noopener">WhatsApp direct</a>
+            </div>
+          </div>
+        </aside>
       </div>
     </section>
 
@@ -173,6 +220,7 @@
             <div class="benefit"><strong>Confiance</strong><span>Formulaire, avis Google et contact direct.</span></div>
           </div>
         </div>
+
         <div class="about-panel">
           <img src="logo 2.PNG" alt="logo" class="about-logo">
         </div>
@@ -206,22 +254,6 @@
             <p>“Très satisfait du suivi et de l’accueil. Le site donne déjà une excellente première impression.”</p>
             <strong>Avis client</strong>
           </article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section section-dark" id="zones">
-      <div class="container">
-        <div class="section-title">
-          <p class="eyebrow">ZONE D’INTERVENTION</p>
-          <h2>Portet-sur-Garonne, Muret et Toulouse Sud</h2>
-          <p>Le site a été rédigé pour mieux capter une clientèle locale sur ces zones.</p>
-        </div>
-        <div class="trust-grid">
-          <div class="trust-item"><strong>Portet-sur-Garonne</strong><span>Localisation principale mise en avant.</span></div>
-          <div class="trust-item"><strong>Muret</strong><span>Ville intégrée pour élargir la clientèle locale.</span></div>
-          <div class="trust-item"><strong>Toulouse Sud</strong><span>Zone de chalandise visible dans le contenu.</span></div>
-          <div class="trust-item"><strong>WhatsApp</strong><span>Lien pré-rempli pour augmenter les contacts.</span></div>
         </div>
       </div>
     </section>
