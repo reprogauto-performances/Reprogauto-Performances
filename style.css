@@ -90,12 +90,19 @@ a {
 }
 
 .logo {
-  width: 95px;
-  max-width: 30vw;
+  width: 92px;
+  max-width: 28vw;
   height: auto;
   display: block;
   margin: 0 auto;
   filter: drop-shadow(0 0 10px rgba(255, 0, 0, 0.28));
+}
+
+.about-logo {
+  width: min(320px, 100%);
+  margin: 0 auto;
+  height: auto;
+  filter: drop-shadow(0 0 18px rgba(255, 0, 0, 0.18));
 }
 
 .menu {
@@ -116,7 +123,6 @@ a {
 .nav-actions {
   display: flex;
   gap: 12px;
-  margin-top: 14px;
 }
 
 .btn,
@@ -171,12 +177,6 @@ a.btn {
   border: 1px solid var(--line);
 }
 
-.btn-wa {
-  background: rgba(31, 167, 80, 0.15);
-  border-color: rgba(31, 167, 80, 0.5);
-  color: #fff;
-}
-
 .full {
   width: 100%;
 }
@@ -184,7 +184,7 @@ a.btn {
 .hero {
   position: relative;
   overflow: hidden;
-  padding: 55px 20px 60px;
+  padding: 70px 20px 72px;
   text-align: center;
 }
 
@@ -203,16 +203,17 @@ a.btn {
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(5, 6, 8, 0.9) 0%, rgba(5, 6, 8, 0.78) 45%, rgba(5, 6, 8, 0.5) 100%),
-    radial-gradient(circle at 75% 20%, rgba(255, 47, 72, 0.18), transparent 20%),
+    linear-gradient(90deg, rgba(5, 6, 8, 0.92) 0%, rgba(5, 6, 8, 0.78) 45%, rgba(5, 6, 8, 0.56) 100%),
+    radial-gradient(circle at 75% 20%, rgba(255, 47, 72, 0.16), transparent 20%),
     url("https://images.unsplash.com/photo-1503376780353-7e6692767b70?auto=format&fit=crop&w=1600&q=80") center/cover no-repeat;
 }
 
 .hero-content {
   position: relative;
   z-index: 1;
-  max-width: 700px;
+  max-width: 760px;
   margin: 0 auto;
+  padding-top: 10px;
 }
 
 .eyebrow {
@@ -224,9 +225,9 @@ a.btn {
 }
 
 .hero h1 {
-  margin: 24px 0 18px;
+  margin: 0 0 18px;
   font-size: clamp(2.4rem, 8vw, 4.8rem);
-  line-height: 1.05;
+  line-height: 1.02;
   letter-spacing: -0.02em;
   color: #fff;
   font-weight: 900;
@@ -244,53 +245,12 @@ a.btn {
   max-width: 62ch;
 }
 
-.hero-buttons {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  margin: 20px 0 10px;
-  flex-wrap: wrap;
-}
-
 .hero-cta {
   display: flex;
   gap: 12px;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 10px;
-}
-
-.hero-points {
-  margin-top: 22px;
-  display: flex;
-  gap: 10px;
-  flex-wrap: wrap;
-}
-
-.hero-points span {
-  padding: 10px 14px;
-  border: 1px solid rgba(255, 255, 255, 0.12);
-  border-radius: 999px;
-  background: rgba(255, 255, 255, 0.05);
-  color: #e8ebf1;
-}
-
-.hero-grid {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  grid-template-columns: 1.08fr 0.92fr;
-  gap: 30px;
-  align-items: center;
-}
-
-.hero-copy {
-  text-align: left;
-}
-
-.hero-card {
-  position: relative;
-  z-index: 1;
 }
 
 .glass-card,
@@ -493,12 +453,6 @@ p {
   padding: 24px;
 }
 
-.about-panel img {
-  width: min(420px, 100%);
-  margin: 0 auto;
-  height: auto;
-}
-
 .review-action {
   margin-top: 18px;
 }
@@ -572,8 +526,7 @@ p {
   line-height: 1.6;
 }
 
-.floating-wa,
-.whatsapp-fixed {
+.floating-wa {
   position: fixed;
   right: 16px;
   left: auto;
@@ -617,7 +570,6 @@ p {
 
 @media (max-width: 1080px) {
   .nav {
-    display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
@@ -625,7 +577,6 @@ p {
   }
 
   .brand {
-    order: 1;
     width: 100%;
   }
 
@@ -634,18 +585,17 @@ p {
   }
 
   .nav-actions {
-    order: 2;
     display: flex;
     justify-content: center;
     gap: 10px;
     width: 100%;
+    flex-wrap: wrap;
   }
 
   .nav-actions .btn {
     width: auto;
   }
 
-  .hero-grid,
   .about-grid,
   .contact-grid {
     grid-template-columns: 1fr;
@@ -655,14 +605,6 @@ p {
   .cards-grid,
   .reviews-grid {
     grid-template-columns: 1fr 1fr;
-  }
-
-  .hero-copy {
-    text-align: center;
-  }
-
-  .hero-points {
-    justify-content: center;
   }
 }
 
@@ -674,16 +616,19 @@ p {
   }
 
   .logo {
-    width: 90px;
+    width: 88px;
     max-width: 28vw;
   }
 
-  .hero {
-    padding-top: 45px;
-    padding-bottom: 50px;
+  .about-logo {
+    width: min(240px, 90%);
   }
 
-  .hero-buttons,
+  .hero {
+    padding-top: 56px;
+    padding-bottom: 56px;
+  }
+
   .hero-cta {
     flex-direction: column;
     align-items: stretch;
@@ -705,8 +650,7 @@ p {
     grid-template-columns: 1fr;
   }
 
-  .floating-wa,
-  .whatsapp-fixed {
+  .floating-wa {
     min-width: 140px;
     padding: 11px 16px;
     font-size: 0.95rem;
