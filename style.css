@@ -277,3 +277,44 @@ a.btn {
 .logo-center {
   text-align: center !important;
 }
+.brand {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  width: 100% !important;
+  text-align: center !important;
+}
+
+.logo {
+  width: 110px !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+@media (max-width: 1080px) {
+  .nav {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+    gap: 18px !important;
+  }
+
+  .brand {
+    order: 1;
+  }
+
+  .nav-actions {
+    order: 2;
+    display: flex !important;
+    justify-content: center !important;
+    gap: 12px !important;
+    width: 100% !important;
+  }
+
+  .menu {
+    display: none !important;
+  }
+}
