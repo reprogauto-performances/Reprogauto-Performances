@@ -266,3 +266,14 @@ a.btn {
   left: auto !important;
   right: auto !important;
 }
+.about-panel,
+.hero,
+.hero-copy,
+.hero-grid,
+.container {
+  text-align: initial;
+}
+
+.logo-center {
+  text-align: center !important;
+}
